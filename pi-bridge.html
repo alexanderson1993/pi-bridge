@@ -1,0 +1,16 @@
+<head>
+  <title>pi-bridge</title>
+</head>
+
+<body>
+  <h1>Welcome to My Pi Bridge!</h1>
+  <p>This is a little demonstration of my IoT Raspberry Pi. Clicking the button toggles a little LED light hooked up to my RPi via the GPIO pins.</p>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>The light is currently {{#if counter}}on{{else}}off{{/if}}.</p>
+  <p>Pi input: {{input}}</p>
+  <p>Brig State: {{brig}}</p>
+</template>
